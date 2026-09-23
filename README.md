@@ -8,7 +8,7 @@
 
 ## ✨ 核心亮点
 
-- **🚀 [点击直接打开交互式仪表盘](outputs/dashboard.html)**：无需安装任何环境，浏览器即可查看五大可视化组件（静态 HTML 版）；
+- **🚀 [点击直接打开交互式仪表盘](https://htmlpreview.github.io/?https://github.com/OVIANNN/changsha_logistics_project/blob/main/outputs/dashboard.html)**：无需安装任何环境，浏览器即可查看五大可视化组件（静态 HTML 版，在线渲染）；
 - **DEA-Malmquist 物流效率测算**：不依赖 pyDEA，用 scipy 线性规划手写投入导向 CCR 模型；
 - **快递业务量预测**：SARIMAX 季节模型 + 95% 置信区间；
 - **区域空间网络**：修正引力模型 + NetworkX 中心性与凝聚子群；
