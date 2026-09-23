@@ -1,0 +1,9 @@
+﻿文件,行数,列数,填充缺失值,截尾异常值
+china_railway_monthly.csv,72,6,0,0
+dea_panel.csv,30,7,0,0
+express_monthly.csv,72,6,0,2
+multimodal_nodes.csv,7,7,0,4
+multimodal_routes.csv,38,9,0,3
+regional_logistics.csv,9,4,0,2
+risk_warnings.csv,620,8,0,186
+road_freight_monthly.csv,72,3,0,12

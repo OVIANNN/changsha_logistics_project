@@ -1,0 +1,63 @@
+===== 线性回归（OLS） =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             物流成本占GDP比率   R-squared:                       0.969
+Model:                            OLS   Adj. R-squared:                  0.966
+Method:                 Least Squares   F-statistic:                     246.1
+Date:                Wed, 23 Sep 2026   Prob (F-statistic):           5.22e-23
+Time:                        01:40:30   Log-Likelihood:                 1.5118
+No. Observations:                  36   AIC:                             6.976
+Df Residuals:                      31   BIC:                             14.89
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         16.9332      4.603      3.679      0.001       7.546      26.321
+公路货运占比        10.8951      4.067      2.679      0.012       2.601      19.189
+枢纽能级指数        -0.0280      0.024     -1.143      0.262      -0.078       0.022
+信息化水平指数       -0.0098      0.017     -0.594      0.557      -0.044       0.024
+政策支持指数        -0.0300      0.018     -1.632      0.113      -0.068       0.007
+==============================================================================
+Omnibus:                        3.209   Durbin-Watson:                   1.924
+Prob(Omnibus):                  0.201   Jarque-Bera (JB):                2.085
+Skew:                          -0.285   Prob(JB):                        0.353
+Kurtosis:                       4.032   Cond. No.                     1.94e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.94e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+===== 双对数回归（弹性） =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             物流成本占GDP比率   R-squared:                       0.967
+Model:                            OLS   Adj. R-squared:                  0.963
+Method:                 Least Squares   F-statistic:                     226.9
+Date:                Wed, 23 Sep 2026   Prob (F-statistic):           1.77e-22
+Time:                        01:40:30   Log-Likelihood:                 108.08
+No. Observations:                  36   AIC:                            -206.2
+Df Residuals:                      31   BIC:                            -198.2
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          3.9916      0.278     14.342      0.000       3.424       4.559
+公路货运占比         0.4850      0.143      3.392      0.002       0.193       0.777
+枢纽能级指数        -0.0770      0.096     -0.805      0.427      -0.272       0.118
+信息化水平指数       -0.0469      0.067     -0.697      0.491      -0.184       0.090
+政策支持指数        -0.0745      0.069     -1.083      0.287      -0.215       0.066
+==============================================================================
+Omnibus:                        1.219   Durbin-Watson:                   1.968
+Prob(Omnibus):                  0.544   Jarque-Bera (JB):                0.440
+Skew:                          -0.201   Prob(JB):                        0.803
+Kurtosis:                       3.364   Cond. No.                     1.11e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.11e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

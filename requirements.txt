@@ -1,0 +1,30 @@
+# =========================================================
+# 长沙物流运行态势分析与降本增效策略研究 —— 依赖清单
+# 说明：
+#   - 以下为核心依赖，均已在本机 Python 3.14 (Anaconda) 环境验证可用。
+#   - TensorFlow/Torch（LSTM）未安装，本项目改用 statsmodels 的 ARIMA/SARIMAX 进行时间序列预测。
+#   - geopandas/folium 依赖较重（需要 GDAL/Shapely 编译），本项目改用 Plotly Scattergeo 模拟地理坐标。
+#   - pyDEA 未安装，本项目在 src/03_dea_malmquist.py 中自行实现 DEA(CCR/BCC) 与 Malmquist 指数。
+#   - dash 未安装，本项目使用 streamlit 构建交互式仪表盘。
+# =========================================================
+
+# ---- 核心依赖（必须）----
+pandas
+numpy
+matplotlib
+seaborn
+plotly
+scikit-learn
+statsmodels
+networkx
+streamlit
+openpyxl
+
+# ---- 可选依赖（如可安装则启用，否则自动降级方案）----
+# tensorflow>=2.15          # LSTM（环境受限，改用 ARIMA）
+# torch                     # LSTM（环境受限，改用 ARIMA）
+# pyDEA                     # DEA（自行实现）
+# geopandas                 # GIS 地图（改用 Plotly Scattergeo）
+# folium                    # 交互地图（改用 Plotly Scattergeo）
+# dash                      # 仪表盘（改用 Streamlit）
+# jupyter                   # 可选 notebook
